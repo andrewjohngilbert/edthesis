@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81D6829LG0');
+  </script>
 
-  gtag('config', 'G-81D6829LG0');
-</script>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://andrewjohngilbert.github.io/edthesis/" />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Thesis",
+    "headline": "Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning",
+    "name": "Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning",
+    "author": {
+      "@type": "Person",
+      "name": "Ed Fish",
+      "sameAs": [
+        "https://ed-fish.github.io/"
+      ]
+    },
+    "datePublished": "2024-01-01",
+    "inSupportOf": "Doctor of Philosophy (PhD) in Multimodal Video Understanding",
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Surrey"
+    },
+    "url": "https://andrewjohngilbert.github.io/edthesis/",
+    "image": "assets/edthesisteaser.jpg",
+    "description": "PhD thesis by Ed Fish (University of Surrey, 2024) on resource-efficient multimodal video understanding with deep learning, covering weakly supervised semantic clustering, long-form video transformers, multi-resolution audio-visual fusion for temporal action localisation, and prompt-based few-shot temporal action localisation.",
+    "keywords": [
+      "multimodal video understanding",
+      "temporal action localisation",
+      "audio-visual fusion",
+      "transformers",
+      "few-shot learning",
+      "prompt learning",
+      "optimal transport",
+      "semantic clustering",
+      "video retrieval",
+      "deep learning"
+    ],
+    "sameAs": [
+      "https://andrewjohngilbert.github.io/edthesis/assets/EdFish_Thesis.pdf"
+    ]
+  }
+  </script>
 
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.">
-  <meta property="og:title" content="DEAR: Depth-Estimated Action Recognition"/>
-  <meta property="og:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/dear/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/dear_Teaser.png" />
+  <meta name="description" content="PhD thesis by Ed Fish (University of Surrey, 2024) on efficient and accessible multimodal video understanding with deep learning, including weakly supervised semantic clustering, long-form video transformers, multi-resolution audio-visual fusion, and prompt learning with optimal transport for few-shot temporal action localisation.">
+  <meta property="og:title" content="Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning"/>
+  <meta property="og:description" content="PhD thesis (University of Surrey, 2024) by Ed Fish on resource-efficient multimodal video understanding, spanning semantic clustering, long-form video transformers, audio-visual fusion, and prompt-based few-shot temporal action localisation."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/edthesis/"/>
+  <meta property="og:image" content="assets/edthesisteaser.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="DEAR: Depth-Estimated Action Recognition">
-  <meta name="twitter:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="asserts/dear_Teaser.png">
+  <meta name="twitter:title" content="Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning – PhD Thesis of Ed Fish">
+  <meta name="twitter:description" content="PhD thesis (University of Surrey, 2024) by Ed Fish on efficient multimodal video understanding with deep learning, including semantic clustering, long-form transformers, audio-visual fusion, and prompt-based few-shot temporal action localisation.">
+  <meta name="twitter:image" content="assets/edthesisteaser.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Machine Learning, Depth, Video Understanding,andrew Gilbert, Sadegh Rahmani,">
+
+  <meta name="keywords" content="multimodal video understanding, temporal action localisation, audio-visual fusion, transformers, few-shot learning, prompt learning, optimal transport, semantic clustering, video retrieval, deep learning, Ed Fish">
+  <meta name="author" content="Ed Fish">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>DEAR: Depth-Estimated Action Recognition</title>
+  <title>Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning – PhD Thesis of Ed Fish</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,165 +90,264 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
+<!-- ======================= HERO / HEADER ======================= -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DEAR: Depth-Estimated Action Recognition</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/sadegh-rahmani" target="_blank">Sadegh Rahmani</a>[1]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="F" target="_blank">Filip Rybansky</a>[2]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc Vuong</a>[2]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a>[1]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>[1]<sup></sup>,</span>
-                  </div>
+          <h1 class="title is-1 publication-title">
+            Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning
+          </h1>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">[1] Unviersity of Surrey [2] Unviersityof Newcastle<br> <a href="https://eccv2024.ecva.net/" target="_blank">The European Conference of Computer Vision 2024</a> <a href="https://sites.google.com/view/hcvworkshop2024" target="_blank">Human-inspired Computer Vision Workshop</a>              
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/dear/assets/dear_paper.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                   <span class="link-block">
-                      <a href="assets/DEAR HCV Poster.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Poster</span>
-                    </a>
-                  </span>
- 
-                  <!-- Github link -->
-                <span class="link-block">
-                    <a href="https://github.com/SadeghRahmaniB/DEAR" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-              
-
-                
-            </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ed-fish.github.io/" target="_blank">Ed Fish</a>
+            </span>
           </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              PhD in Multimodal Video Understanding, University of Surrey, UK<br>
+              2024
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- Thesis PDF -->
+              <span class="link-block">
+                <a href="assets/EdFish_Thesis.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Thesis PDF</span>
+                </a>
+              </span>
+
+              <!-- Personal site -->
+              <span class="link-block">
+                <a href="https://ed-fish.github.io/" target="_blank"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon"><i class="fas fa-user"></i></span>
+                  <span>Personal Website</span>
+                </a>
+              </span>
+
+            </div>
+
+            <!-- Share buttons -->
+            <div class="columns is-centered" style="margin-top:0.75rem;">
+              <div class="column is-narrow">
+                <div class="buttons are-small is-centered">
+                  <a href="https://twitter.com/intent/tweet?url=https://andrewjohngilbert.github.io/edthesis/&text=Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning – PhD Thesis of Ed Fish"
+                     target="_blank" class="button is-info is-light">
+                    <span class="icon"><i class="fab fa-twitter"></i></span><span>Tweet</span>
+                  </a>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://andrewjohngilbert.github.io/edthesis/"
+                     target="_blank" class="button is-link is-light">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span><span>Share</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TL;DR -->
+            <div class="content" style="margin-top:1rem;">
+              <div class="box" style="text-align:left;">
+                <p style="margin-bottom:0.5rem;">
+                  <strong>TL;DR:</strong>
+                  This PhD develops resource-efficient deep learning methods that make multimodal video understanding more accessible:
+                </p>
+                <ul style="margin-top:0;">
+                  <li>Weakly supervised <strong>multimodal semantic clustering</strong> for fine-grained video retrieval and recommendation.</li>
+                  <li>A <strong>two-stream long-form video transformer</strong> using pre-trained encoders and multi-resolution spatiotemporal features.</li>
+                  <li><strong>Multi-resolution audio-visual fusion</strong> with gated cross-attention for temporal action localisation.</li>
+                  <li><strong>PLOT-TAL</strong>: prompt learning with optimal transport for few-shot temporal action localisation using pre-trained vision–language features.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- column -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- ======================= TEASER IMAGE ======================= -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/dear_teaser.jpg">
-      <h2 class="subtitle has-text-centered">
-        We perform supervised action recognition using a fusion of RGB and depth map frames. We used S4V network for processing RGB and the same network plus VideoMamba to extract depth features. Gated cross-attention (GCA) has been used for fusing modalities, while mean operation has been selected for fusing models' scores.
+      <figure class="image">
+        <img src="assets/edthesisteaser.jpg"
+             alt="Retrieval results from bottleneck embeddings before and after self-supervised fine-tuning, showing improved alignment with themes, style, and actions compared to coarse genre labels.">
+      </figure>
+      <h2 class="subtitle has-text-centered" style="margin-top:1rem;">
+        Retrieval results from our fine-grained semantic clustering model. Compared with traditional genre labels, the learned multimodal embeddings group films by their underlying themes, style and actions, enabling more meaningful video recommendation and retrieval.
       </h2>
+
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- ======================= ABSTRACT ======================= -->
+<section class="section hero is-light" id="abstract">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Detecting actions in videos, particularly within cluttered scenes, poses significant challenges due to the limitations of 2D frame analysis from a camera perspective. Unlike human vision, which benefits from 3D understanding, recognizing actions in such environments can be difficult. This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.
+            In the rapidly expanding digital landscape, the ability to extract meaningful insights from vast quantities of video content is transformative. However, many organisations face a critical challenge: they lack the substantial computational resources and the time-intensive annotation processes required to leverage advanced video analysis technologies fully. This thesis addresses this gap by introducing several resource-efficient deep learning strategies tailored for multimodal video understanding applications. The presented methodologies focus on leveraging pre-trained foundational neural networks for multimodal feature extraction, fusion, and spatiotemporal understanding.
+          </p>
+          <p>
+            First, we present a method for fusing multimodal features from video for enhanced style and semantic clustering with weakly labelled video data. By tapping into the capabilities of pre-trained foundational models, we develop a method that captures intricate contextual cues within multimodal video data for improved semantic video recommendation and retrieval applications.
+          </p>
+          <p>
+            Advancing the challenge of long video understanding, we present an innovative architecture that utilises pre-trained encoders to extract spatiotemporal features at various resolutions. This approach achieves state-of-the-art performance in tasks requiring fine-grained temporal analysis, such as speaker recognition and character identification, while maintaining computational efficiency.
+          </p>
+          <p>
+            We continue with a novel approach to audio-visual fusion for temporal action localisation by introducing a gated cross-attention mechanism, which effectively integrates audio and visual features for activity recognition and localisation applications. This results in a low-parameter solution that optimises data utility while improving performance over uni-modal approaches.
+          </p>
+          <p>
+            The final contribution of this thesis is developing a technique for aligning text prompts with visual features using prompt learning and optimal transport. This strategy significantly reduces training overhead and improves generalisation by leveraging pre-trained visual-language features and optimising only a few learnable parameters. This enables precise action localisation and discrimination between foreground and background elements using only a few labelled samples per class.
+          </p>
+          <p>
+            Collectively, these contributions improve access to advanced video analytical tools, making them more accessible to a broader audience, including those constrained by computational and financial limitations. This work advances the technical boundaries of video analysis and democratises its applications, fostering innovation across various fields.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-
-<!-- Paper poster -->
-
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="assets/DEAR HCV Poster.pdf" width="100%" height="1000">
-          </iframe>
-        
+<!-- ======================= DOWNLOADS SECTION  ======================= -->
+<section class="section" id="downloads">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <h2 class="title is-4">Downloads</h2>
+        <div class="box">
+          <div class="columns is-multiline">
+            <div class="column is-12">
+              <strong>Thesis</strong>
+            </div>
+            <div class="column is-12">
+              <a href="assets/EdFish_Thesis.pdf" target="_blank"
+                 class="button is-small is-dark is-rounded">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PhD Thesis PDF</span>
+              </a>
+            </div>
+          </div>
+          <p class="is-size-7 has-text-grey" style="margin-top:0.75rem;">
+            Please cite the thesis if you use these ideas or models in your own work. A BibTeX entry is provided below.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{Rahmani:Dear:ECCVWS:2024,
-        AUTHOR = Rahmani, Sadegh and Rybansky, Filip and Vuong, Quoc and Guerin, Frank and Gilbert, Andrew ",
-        TITLE = "DEAR: Depth-Estimated Action Recognition",
-        BOOKTITLE = " The European Conference of Computer Vision 2024, Human-inspired Computer Vision Workshop",
-        YEAR = "2024",
-        }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
+<!-- ======================= PUBLICATIONS LINKED TO THIS THESIS ======================= -->
+<section class="section hero is-light" id="publications">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Publications Linked to This Thesis</h2>
+        <div class="content">
+          <p>
+            The core chapters of this thesis are closely related to the following peer-reviewed publications:
+          </p>
 
-  <footer class="footer">
+          <ol>
+            <li>
+              <strong>Rethinking Genre Classification with Fine-Grained Semantic Clustering</strong><br>
+              Ed Fish, Jon Weinbren, Andrew Gilbert.<br>
+              <em>IEEE International Conference on Image Processing (ICIP)</em>, 2021.<br>
+              <a href="https://andrewjohngilbert.github.io/Rethinking_genre" target="_blank">Project page</a>
+            </li>
+
+            <li>
+              <strong>Two-Stream Transformer Architecture for Long Form Video Understanding</strong><br>
+              Ed Fish, Jon Weinbren, Andrew Gilbert.<br>
+              <em>British Machine Vision Conference (BMVC)</em>, 2022.<br>
+              <a href="https://bmvc2022.mpi-inf.mpg.de/0660.pdf" target="_blank">Paper (PDF)</a>
+            </li>
+
+            <li>
+              <strong>Multi-Resolution Audio-Visual Feature Fusion for Temporal Action Localization</strong><br>
+              Ed Fish, Jon Weinbren, Andrew Gilbert.<br>
+              <em>NeurIPS 2023 Workshop on Machine Learning for Audio</em>, 2023.<br>
+              <a href="https://andrewjohngilbert.github.io/Multi-TAL/" target="_blank">Project page</a>
+            </li>
+
+            <li>
+              <strong>PLOT-TAL – Prompt Learning with Optimal Transport for Few-Shot Temporal Action Localization</strong><br>
+              Ed Fish, Andrew Gilbert.<br>
+              <em>International Conference on Computer Vision (ICCV’25) – 6th Workshop on Closing the Loop between Vision and Language</em>, 2025.<br>
+              <a href="https://andrewjohngilbert.github.io/PLOT-TAL/" target="_blank">Project page</a>
+            </li>
+          </ol>
+
+          <p>
+            These works are integrated and extended within the thesis, which provides a unified framework for efficient, multimodal video understanding under realistic resource constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BIBTEX ======================= -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <button class="button is-small is-info" onclick="copyBibtex()">Copy BibTeX</button>
+    <pre id="bibtex-entry"><code>@phdthesis{Fish2024Thesis,
+  author    = {Ed Fish},
+  title     = {Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning},
+  school    = {University of Surrey},
+  year      = {2024},
+  address   = {Guildford, United Kingdom},
+  note      = {PhD thesis on resource-efficient multimodal video understanding, including semantic clustering, long-form video transformers, multi-resolution audio-visual fusion, and prompt-based few-shot temporal action localisation}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <strong>Advancing Efficiency and Accessibility in Multimodal Video Understanding with Deep Learning</strong><br>
+            PhD thesis by Ed Fish, University of Surrey, 2024.<br>
+            <br>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+            adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br>
+            Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+              CC BY-SA 4.0</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<script>
+  function copyBibtex() {
+    var bib = document.getElementById('bibtex-entry').innerText;
+    navigator.clipboard.writeText(bib);
+  }
+</script>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
